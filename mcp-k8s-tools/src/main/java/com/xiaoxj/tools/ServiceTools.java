@@ -20,11 +20,11 @@ public class ServiceTools {
         this.coreV1Api = coreV1Api;
     }
 
-    @Tool(name = "list_services", description = "Lists all Kubernetes services in the specified namespace")
-    public List<String> listServices(
-            @ToolParam(description = "The Kubernetes namespace to list services from") String namespace) {
-        return listServices(namespace, "default");
-    }
+//    @Tool(name = "list_services", description = "Lists all Kubernetes services in the specified namespace")
+//    public List<String> listServices(
+//            @ToolParam(description = "The Kubernetes namespace to list services from") String namespace) {
+//        return listServices(namespace, "default");
+//    }
 
     @Tool(name = "list_services", description = "Lists all Kubernetes services in the specified namespace")
     public List<String> listServices(
@@ -67,12 +67,12 @@ public class ServiceTools {
         }
     }
 
-    @Tool(name = "describe_service", description = "Get detailed information about a specific service")
-    public String describeService(
-            @ToolParam(description = "Name of the service to describe") String serviceName,
-            @ToolParam(description = "The Kubernetes namespace where the service is located") String namespace) {
-        return describeService(serviceName, namespace, "default");
-    }
+//    @Tool(name = "describe_service", description = "Get detailed information about a specific service")
+//    public String describeService(
+//            @ToolParam(description = "Name of the service to describe") String serviceName,
+//            @ToolParam(description = "The Kubernetes namespace where the service is located") String namespace) {
+//        return describeService(serviceName, namespace, "default");
+//    }
 
     @Tool(name = "describe_service", description = "Get detailed information about a specific service")
     public String describeService(
@@ -149,12 +149,12 @@ public class ServiceTools {
         }
     }
 
-    @Tool(name = "get_service_endpoints", description = "Get endpoints (pod IPs) for a specific service")
-    public String getServiceEndpoints(
-            @ToolParam(description = "Name of the service to get endpoints for") String serviceName,
-            @ToolParam(description = "The Kubernetes namespace where the service is located") String namespace) {
-        return getServiceEndpoints(serviceName, namespace, "default");
-    }
+//    @Tool(name = "get_service_endpoints", description = "Get endpoints (pod IPs) for a specific service")
+//    public String getServiceEndpoints(
+//            @ToolParam(description = "Name of the service to get endpoints for") String serviceName,
+//            @ToolParam(description = "The Kubernetes namespace where the service is located") String namespace) {
+//        return getServiceEndpoints(serviceName, namespace, "default");
+//    }
 
     @Tool(name = "get_service_endpoints", description = "Get endpoints (pod IPs) for a specific service")
     public String getServiceEndpoints(

@@ -98,11 +98,11 @@ public class SchedulingTools {
         }
     }
 
-    @Tool(name = "list_pod_tolerations", description = "Lists all tolerations on pods in a namespace")
-    public List<String> listPodTolerations(
-            @ToolParam(description = "The Kubernetes namespace to list pod tolerations from") String namespace) {
-        return listPodTolerations(namespace, "default");
-    }
+//    @Tool(name = "list_pod_tolerations", description = "Lists all tolerations on pods in a namespace")
+//    public List<String> listPodTolerations(
+//            @ToolParam(description = "The Kubernetes namespace to list pod tolerations from") String namespace) {
+//        return listPodTolerations(namespace, "default");
+//    }
 
     @Tool(name = "list_pod_tolerations", description = "Lists all tolerations on pods in a namespace")
     public List<String> listPodTolerations(
@@ -133,11 +133,11 @@ public class SchedulingTools {
         }
     }
 
-    @Tool(name = "list_pod_node_affinity", description = "Lists node affinity rules for pods in a namespace")
-    public List<String> listPodNodeAffinity(
-            @ToolParam(description = "The Kubernetes namespace to list pod node affinity rules from") String namespace) {
-        return listPodNodeAffinity(namespace, "default");
-    }
+//    @Tool(name = "list_pod_node_affinity", description = "Lists node affinity rules for pods in a namespace")
+//    public List<String> listPodNodeAffinity(
+//            @ToolParam(description = "The Kubernetes namespace to list pod node affinity rules from") String namespace) {
+//        return listPodNodeAffinity(namespace, "default");
+//    }
 
     @Tool(name = "list_pod_node_affinity", description = "Lists node affinity rules for pods in a namespace")
     public List<String> listPodNodeAffinity(

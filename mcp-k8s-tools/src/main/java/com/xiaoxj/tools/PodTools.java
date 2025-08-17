@@ -25,11 +25,11 @@ public class PodTools {
         this.appsV1Api = appsV1Api;
     }
 
-    @Tool(name = "list_pods", description = "Lists all Kubernetes pods in the specified namespace")
-    public List<String> listPods(
-            @ToolParam(description = "The Kubernetes namespace to list pods from") String namespace) {
-        return listPods(namespace, "default");
-    }
+//    @Tool(name = "list_pods", description = "Lists all Kubernetes pods in the specified namespace")
+//    public List<String> listPods(
+//            @ToolParam(description = "The Kubernetes namespace to list pods from") String namespace) {
+//        return listPods(namespace, "default");
+//    }
 
     @Tool(name = "list_pods", description = "Lists all Kubernetes pods in the specified namespace")
     public List<String> listPods(
@@ -58,12 +58,12 @@ public class PodTools {
         }
     }
 
-    @Tool(name = "get_pod_logs", description = "Retrieves logs from a specific Kubernetes pod with error pattern detection")
-    public String getPodLogs(
-            @ToolParam(description = "Name of the pod to get logs from") String podName,
-            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace) {
-        return getPodLogs(podName, namespace, "default", 100);
-    }
+//    @Tool(name = "get_pod_logs", description = "Retrieves logs from a specific Kubernetes pod with error pattern detection")
+//    public String getPodLogs(
+//            @ToolParam(description = "Name of the pod to get logs from") String podName,
+//            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace) {
+//        return getPodLogs(podName, namespace, "default", 100);
+//    }
 
     @Tool(name = "get_pod_logs", description = "Retrieves logs from a specific Kubernetes pod with error pattern detection")
     public String getPodLogs(
@@ -102,12 +102,12 @@ public class PodTools {
         }
     }
 
-    @Tool(name = "describe_pod", description = "Gets detailed information about a specific Kubernetes pod")
-    public String describePod(
-            @ToolParam(description = "Name of the pod to describe") String podName,
-            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace) {
-        return describePod(podName, namespace, "default");
-    }
+//    @Tool(name = "describe_pod", description = "Gets detailed information about a specific Kubernetes pod")
+//    public String describePod(
+//            @ToolParam(description = "Name of the pod to describe") String podName,
+//            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace) {
+//        return describePod(podName, namespace, "default");
+//    }
 
     @Tool(name = "describe_pod", description = "Gets detailed information about a specific Kubernetes pod")
     public String describePod(
@@ -148,11 +148,11 @@ public class PodTools {
         }
     }
 
-    @Tool(name = "diagnose_pods", description = "Analyzes problematic pods and provides troubleshooting recommendations")
-    public String analyzePodIssues(
-            @ToolParam(description = "The Kubernetes namespace to analyze pods from") String namespace) {
-        return analyzePodIssues(namespace, "default");
-    }
+//    @Tool(name = "diagnose_pods", description = "Analyzes problematic pods and provides troubleshooting recommendations")
+//    public String analyzePodIssues(
+//            @ToolParam(description = "The Kubernetes namespace to analyze pods from") String namespace) {
+//        return analyzePodIssues(namespace, "default");
+//    }
 
     @Tool(name = "diagnose_pods", description = "Analyzes problematic pods and provides troubleshooting recommendations")
     public String analyzePodIssues(
@@ -305,12 +305,12 @@ public class PodTools {
         }
     }
 
-    @Tool(name = "get_pod_metrics", description = "Get resource usage metrics for a specific pod")
-    public String getPodMetrics(
-            @ToolParam(description = "Name of the pod to get metrics for") String podName,
-            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace) {
-        return getPodMetrics(podName, namespace, "default");
-    }
+//    @Tool(name = "get_pod_metrics", description = "Get resource usage metrics for a specific pod")
+//    public String getPodMetrics(
+//            @ToolParam(description = "Name of the pod to get metrics for") String podName,
+//            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace) {
+//        return getPodMetrics(podName, namespace, "default");
+//    }
 
     @Tool(name = "get_pod_metrics", description = "Get resource usage metrics for a specific pod")
     public String getPodMetrics(
@@ -372,13 +372,13 @@ public class PodTools {
         }
     }
 
-    @Tool(name = "exec_in_pod", description = "Execute a command in a pod container")
-    public String execInPod(
-            @ToolParam(description = "Name of the pod to execute command in") String podName,
-            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace,
-            @ToolParam(description = "Command to execute") String command) {
-        return execInPod(podName, namespace, "default", command);
-    }
+//    @Tool(name = "exec_in_pod", description = "Execute a command in a pod container")
+//    public String execInPod(
+//            @ToolParam(description = "Name of the pod to execute command in") String podName,
+//            @ToolParam(description = "The Kubernetes namespace where the pod is located") String namespace,
+//            @ToolParam(description = "Command to execute") String command) {
+//        return execInPod(podName, namespace, "default", command);
+//    }
 
     @Tool(name = "exec_in_pod", description = "Execute a command in a pod container")
     public String execInPod(

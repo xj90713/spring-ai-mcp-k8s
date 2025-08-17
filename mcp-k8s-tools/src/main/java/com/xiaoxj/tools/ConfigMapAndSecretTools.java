@@ -17,11 +17,11 @@ public class ConfigMapAndSecretTools {
         this.coreV1Api = coreV1Api;
     }
 
-    @Tool(name = "list_config_maps", description = "Lists all ConfigMaps in the specified namespace")
-    public List<String> listConfigMaps(
-            @ToolParam(description = "The Kubernetes namespace to list ConfigMaps from") String namespace) {
-        return listConfigMaps(namespace, "default");
-    }
+//    @Tool(name = "list_config_maps", description = "Lists all ConfigMaps in the specified namespace")
+//    public List<String> listConfigMaps(
+//            @ToolParam(description = "The Kubernetes namespace to list ConfigMaps from") String namespace) {
+//        return listConfigMaps(namespace, "default");
+//    }
 
     @Tool(name = "list_config_maps", description = "Lists all ConfigMaps in the specified namespace")
     public List<String> listConfigMaps(
@@ -47,12 +47,12 @@ public class ConfigMapAndSecretTools {
         }
     }
 
-    @Tool(name = "describe_config_map", description = "Get detailed information about a specific ConfigMap")
-    public String describeConfigMap(
-            @ToolParam(description = "Name of the ConfigMap to describe") String configMapName,
-            @ToolParam(description = "The Kubernetes namespace where the ConfigMap is located") String namespace) {
-        return describeConfigMap(configMapName, namespace, "default");
-    }
+//    @Tool(name = "describe_config_map", description = "Get detailed information about a specific ConfigMap")
+//    public String describeConfigMap(
+//            @ToolParam(description = "Name of the ConfigMap to describe") String configMapName,
+//            @ToolParam(description = "The Kubernetes namespace where the ConfigMap is located") String namespace) {
+//        return describeConfigMap(configMapName, namespace, "default");
+//    }
 
     @Tool(name = "describe_config_map", description = "Get detailed information about a specific ConfigMap")
     public String describeConfigMap(
@@ -92,11 +92,11 @@ public class ConfigMapAndSecretTools {
         }
     }
 
-    @Tool(name = "list_secrets", description = "Lists all Secrets in the specified namespace (names only for security)")
-    public List<String> listSecrets(
-            @ToolParam(description = "The Kubernetes namespace to list Secrets from") String namespace) {
-        return listSecrets(namespace, "default");
-    }
+//    @Tool(name = "list_secrets", description = "Lists all Secrets in the specified namespace (names only for security)")
+//    public List<String> listSecrets(
+//            @ToolParam(description = "The Kubernetes namespace to list Secrets from") String namespace) {
+//        return listSecrets(namespace, "default");
+//    }
 
     @Tool(name = "list_secrets", description = "Lists all Secrets in the specified namespace (names only for security)")
     public List<String> listSecrets(
@@ -121,12 +121,12 @@ public class ConfigMapAndSecretTools {
         }
     }
 
-    @Tool(name = "describe_secret", description = "Get metadata about a specific Secret (no secret values shown)")
-    public String describeSecret(
-            @ToolParam(description = "Name of the Secret to describe") String secretName,
-            @ToolParam(description = "The Kubernetes namespace where the Secret is located") String namespace) {
-        return describeSecret(secretName, namespace, "default");
-    }
+//    @Tool(name = "describe_secret", description = "Get metadata about a specific Secret (no secret values shown)")
+//    public String describeSecret(
+//            @ToolParam(description = "Name of the Secret to describe") String secretName,
+//            @ToolParam(description = "The Kubernetes namespace where the Secret is located") String namespace) {
+//        return describeSecret(secretName, namespace, "default");
+//    }
 
     @Tool(name = "describe_secret", description = "Get metadata about a specific Secret (no secret values shown)")
     public String describeSecret(

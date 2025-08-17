@@ -22,11 +22,11 @@ public class NetworkTools {
         this.networkingV1Api = networkingV1Api;
     }
 
-    @Tool(name = "listIngresses", description = "Lists all Ingresses in the specified namespace")
-    public List<String> listIngresses(
-            @ToolParam(description = "The Kubernetes namespace to list Ingresses from") String namespace) {
-        return listIngresses(namespace, "default");
-    }
+//    @Tool(name = "listIngresses", description = "Lists all Ingresses in the specified namespace")
+//    public List<String> listIngresses(
+//            @ToolParam(description = "The Kubernetes namespace to list Ingresses from") String namespace) {
+//        return listIngresses(namespace, "default");
+//    }
 
     @Tool(name = "listIngresses", description = "Lists all Ingresses in the specified namespace")
     public List<String> listIngresses(
@@ -62,13 +62,13 @@ public class NetworkTools {
             return new ArrayList<>();
         }
     }
-
-    @Tool(name = "describeIngress", description = "Get detailed information about a specific Ingress")
-    public String describeIngress(
-            @ToolParam(description = "Name of the Ingress to describe") String ingressName,
-            @ToolParam(description = "The Kubernetes namespace where the Ingress is located") String namespace) {
-        return describeIngress(ingressName, namespace, "default");
-    }
+//
+//    @Tool(name = "describeIngress", description = "Get detailed information about a specific Ingress")
+//    public String describeIngress(
+//            @ToolParam(description = "Name of the Ingress to describe") String ingressName,
+//            @ToolParam(description = "The Kubernetes namespace where the Ingress is located") String namespace) {
+//        return describeIngress(ingressName, namespace, "default");
+//    }
 
     @Tool(name = "describeIngress", description = "Get detailed information about a specific Ingress")
     public String describeIngress(
@@ -128,11 +128,11 @@ public class NetworkTools {
         }
     }
 
-    @Tool(name = "listNetworkPolicies", description = "Lists all NetworkPolicies in the specified namespace")
-    public List<String> listNetworkPolicies(
-            @ToolParam(description = "The Kubernetes namespace to list NetworkPolicies from") String namespace) {
-        return listNetworkPolicies(namespace, "default");
-    }
+//    @Tool(name = "listNetworkPolicies", description = "Lists all NetworkPolicies in the specified namespace")
+//    public List<String> listNetworkPolicies(
+//            @ToolParam(description = "The Kubernetes namespace to list NetworkPolicies from") String namespace) {
+//        return listNetworkPolicies(namespace, "default");
+//    }
 
     @Tool(name = "listNetworkPolicies", description = "Lists all NetworkPolicies in the specified namespace")
     public List<String> listNetworkPolicies(
@@ -163,12 +163,12 @@ public class NetworkTools {
         }
     }
 
-    @Tool(name = "describeNetworkPolicy", description = "Get detailed information about a specific NetworkPolicy")
-    public String describeNetworkPolicy(
-            @ToolParam(description = "Name of the NetworkPolicy to describe") String policyName,
-            @ToolParam(description = "The Kubernetes namespace where the NetworkPolicy is located") String namespace) {
-        return describeNetworkPolicy(policyName, namespace, "default");
-    }
+//    @Tool(name = "describeNetworkPolicy", description = "Get detailed information about a specific NetworkPolicy")
+//    public String describeNetworkPolicy(
+//            @ToolParam(description = "Name of the NetworkPolicy to describe") String policyName,
+//            @ToolParam(description = "The Kubernetes namespace where the NetworkPolicy is located") String namespace) {
+//        return describeNetworkPolicy(policyName, namespace, "default");
+//    }
 
     @Tool(name = "describeNetworkPolicy", description = "Get detailed information about a specific NetworkPolicy")
     public String describeNetworkPolicy(

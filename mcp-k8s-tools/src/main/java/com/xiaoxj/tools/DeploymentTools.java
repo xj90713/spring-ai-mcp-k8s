@@ -24,11 +24,11 @@ public class DeploymentTools {
         this.coreV1Api = coreV1Api;
     }
 
-    @Tool(name = "list_deployments", description = "Lists all Kubernetes deployments in the specified namespace")
-    public String listDeployments(
-            @ToolParam(description = "The Kubernetes namespace to list deployments from") String namespace) {
-        return listDeployments(namespace, "default");
-    }
+//    @Tool(name = "list_deployments", description = "Lists all Kubernetes deployments in the specified namespace")
+//    public String listDeployments(
+//            @ToolParam(description = "The Kubernetes namespace to list deployments from") String namespace) {
+//        return listDeployments(namespace, "default");
+//    }
 
     @Tool(name = "list_deployments", description = "Lists all Kubernetes deployments in the specified namespace")
     public String listDeployments(
@@ -101,12 +101,12 @@ public class DeploymentTools {
         }
     }
 
-    @Tool(name = "describe_deployment", description = "Get detailed information about a specific deployment")
-    public String describeDeployment(
-            @ToolParam(description = "Name of the deployment to describe") String deploymentName,
-            @ToolParam(description = "The Kubernetes namespace where the deployment is located") String namespace) {
-        return describeDeployment(deploymentName, namespace, "default");
-    }
+//    @Tool(name = "describe_deployment", description = "Get detailed information about a specific deployment")
+//    public String describeDeployment(
+//            @ToolParam(description = "Name of the deployment to describe") String deploymentName,
+//            @ToolParam(description = "The Kubernetes namespace where the deployment is located") String namespace) {
+//        return describeDeployment(deploymentName, namespace, "default");
+//    }
 
     @Tool(name = "describe_deployment", description = "Get detailed information about a specific deployment")
     public String describeDeployment(
@@ -222,12 +222,12 @@ public class DeploymentTools {
         }
     }
 
-    @Tool(name = "analyze_deployment", description = "Analyzes the health and status of a deployment")
-    public String analyzeDeploymentHealth(
-            @ToolParam(description = "Name of the deployment to analyze") String deploymentName,
-            @ToolParam(description = "The Kubernetes namespace where the deployment is located") String namespace) {
-        return analyzeDeploymentHealth(deploymentName, namespace, "default");
-    }
+//    @Tool(name = "analyze_deployment", description = "Analyzes the health and status of a deployment")
+//    public String analyzeDeploymentHealth(
+//            @ToolParam(description = "Name of the deployment to analyze") String deploymentName,
+//            @ToolParam(description = "The Kubernetes namespace where the deployment is located") String namespace) {
+//        return analyzeDeploymentHealth(deploymentName, namespace, "default");
+//    }
 
     @Tool(name = "analyze_deployment", description = "Analyzes the health and status of a deployment")
     public String analyzeDeploymentHealth(

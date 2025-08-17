@@ -19,11 +19,11 @@ public class ResourceManagementTools {
         this.coreV1Api = coreV1Api;
     }
 
-    @Tool(name = "get_namespace_resource_quotas", description = "Get resource quotas for a namespace")
-    public String getNamespaceResourceQuotas(
-            @ToolParam(description = "The Kubernetes namespace to get resource quotas from") String namespace) {
-        return getNamespaceResourceQuotas(namespace, "default");
-    }
+//    @Tool(name = "get_namespace_resource_quotas", description = "Get resource quotas for a namespace")
+//    public String getNamespaceResourceQuotas(
+//            @ToolParam(description = "The Kubernetes namespace to get resource quotas from") String namespace) {
+//        return getNamespaceResourceQuotas(namespace, "default");
+//    }
 
     @Tool(name = "get_namespace_resource_quotas", description = "Get resource quotas for a namespace")
     public String getNamespaceResourceQuotas(
@@ -65,12 +65,12 @@ public class ResourceManagementTools {
         }
     }
 
-    @Tool(name = "describe_limit_range", description = "Get limit range details for a namespace")
-    public String describeLimitRange(
-            @ToolParam(description = "Name of the LimitRange to describe") String name,
-            @ToolParam(description = "The Kubernetes namespace where the LimitRange is located") String namespace) {
-        return describeLimitRange(name, namespace, "default");
-    }
+//    @Tool(name = "describe_limit_range", description = "Get limit range details for a namespace")
+//    public String describeLimitRange(
+//            @ToolParam(description = "Name of the LimitRange to describe") String name,
+//            @ToolParam(description = "The Kubernetes namespace where the LimitRange is located") String namespace) {
+//        return describeLimitRange(name, namespace, "default");
+//    }
 
     @Tool(name = "describe_limit_range", description = "Get limit range details for a namespace")
     public String describeLimitRange(
@@ -198,11 +198,11 @@ public class ResourceManagementTools {
         }
     }
 
-    @Tool(name = "get_namespace_resource_usage", description = "Get resource usage for a specific namespace")
-    public String getNamespaceResourceUsage(
-            @ToolParam(description = "The Kubernetes namespace to get resource usage from") String namespace) {
-        return getNamespaceResourceUsage(namespace, "default");
-    }
+//    @Tool(name = "get_namespace_resource_usage", description = "Get resource usage for a specific namespace")
+//    public String getNamespaceResourceUsage(
+//            @ToolParam(description = "The Kubernetes namespace to get resource usage from") String namespace) {
+//        return getNamespaceResourceUsage(namespace, "default");
+//    }
 
     @Tool(name = "get_namespace_resource_usage", description = "Get resource usage for a specific namespace")
     public String getNamespaceResourceUsage(

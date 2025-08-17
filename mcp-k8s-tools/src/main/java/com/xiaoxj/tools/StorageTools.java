@@ -49,11 +49,11 @@ public class StorageTools {
         }
     }
 
-    @Tool(name = "list_persistent_volume_claims", description = "Lists all persistent volume claims in the specified namespace")
-    public List<String> listPersistentVolumeClaims(
-            @ToolParam(description = "The Kubernetes namespace to list PVCs from") String namespace) {
-        return listPersistentVolumeClaims(namespace, "default");
-    }
+//    @Tool(name = "list_persistent_volume_claims", description = "Lists all persistent volume claims in the specified namespace")
+//    public List<String> listPersistentVolumeClaims(
+//            @ToolParam(description = "The Kubernetes namespace to list PVCs from") String namespace) {
+//        return listPersistentVolumeClaims(namespace, "default");
+//    }
 
     @Tool(name = "list_persistent_volume_claims", description = "Lists all persistent volume claims in the specified namespace")
     public List<String> listPersistentVolumeClaims(
@@ -157,12 +157,12 @@ public class StorageTools {
         }
     }
 
-    @Tool(name = "describe_persistent_volume_claim", description = "Get detailed information about a specific persistent volume claim")
-    public String describePersistentVolumeClaim(
-            @ToolParam(description = "Name of the persistent volume claim to describe") String pvcName,
-            @ToolParam(description = "The Kubernetes namespace where the PVC is located") String namespace) {
-        return describePersistentVolumeClaim(pvcName, namespace, "default");
-    }
+//    @Tool(name = "describe_persistent_volume_claim", description = "Get detailed information about a specific persistent volume claim")
+//    public String describePersistentVolumeClaim(
+//            @ToolParam(description = "Name of the persistent volume claim to describe") String pvcName,
+//            @ToolParam(description = "The Kubernetes namespace where the PVC is located") String namespace) {
+//        return describePersistentVolumeClaim(pvcName, namespace, "default");
+//    }
 
     @Tool(name = "describe_persistent_volume_claim", description = "Get detailed information about a specific persistent volume claim")
     public String describePersistentVolumeClaim(

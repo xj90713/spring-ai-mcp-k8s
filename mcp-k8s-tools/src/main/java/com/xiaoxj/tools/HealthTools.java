@@ -134,11 +134,11 @@ public class HealthTools {
         }
     }
 
-    @Tool(name = "get_failed_workloads", description = "List all failed pods/jobs in a namespace")
-    public String getFailedWorkloads(
-            @ToolParam(description = "The Kubernetes namespace to check for failed workloads") String namespace) {
-        return getFailedWorkloads(namespace, "default");
-    }
+//    @Tool(name = "get_failed_workloads", description = "List all failed pods/jobs in a namespace")
+//    public String getFailedWorkloads(
+//            @ToolParam(description = "The Kubernetes namespace to check for failed workloads") String namespace) {
+//        return getFailedWorkloads(namespace, "default");
+//    }
 
     @Tool(name = "get_failed_workloads", description = "List all failed pods/jobs in a namespace")
     public String getFailedWorkloads(
@@ -235,11 +235,11 @@ public class HealthTools {
         }
     }
 
-    @Tool(name = "analyze_resource_bottlenecks", description = "Identify resource constraints in a namespace")
-    public String analyzeResourceBottlenecks(
-            @ToolParam(description = "The Kubernetes namespace to analyze for resource bottlenecks") String namespace) {
-        return analyzeResourceBottlenecks(namespace, "default");
-    }
+//    @Tool(name = "analyze_resource_bottlenecks", description = "Identify resource constraints in a namespace")
+//    public String analyzeResourceBottlenecks(
+//            @ToolParam(description = "The Kubernetes namespace to analyze for resource bottlenecks") String namespace) {
+//        return analyzeResourceBottlenecks(namespace, "default");
+//    }
 
     @Tool(name = "analyze_resource_bottlenecks", description = "Identify resource constraints in a namespace")
     public String analyzeResourceBottlenecks(

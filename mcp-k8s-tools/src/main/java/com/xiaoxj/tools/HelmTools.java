@@ -21,15 +21,15 @@ public class HelmTools {
         return executeHelmCommand("list", "--namespace", namespace);
     }
 
-    @Tool(name = "install_chart", description = "Install a Helm chart with optional values")
-    public String installChart(
-            @ToolParam(description = "Name for the release") String releaseName,
-            @ToolParam(description = "Name of the chart to install") String chartName,
-            @ToolParam(description = "The Kubernetes namespace to install into") String namespace,
-            @ToolParam(description = "Optional version of the chart") String version,
-            @ToolParam(description = "Optional key-value pairs for chart values") Map<String, String> values) throws IOException {
-        return installChart(releaseName, chartName, namespace, version, values, null);
-    }
+//    @Tool(name = "install_chart", description = "Install a Helm chart with optional values")
+//    public String installChart(
+//            @ToolParam(description = "Name for the release") String releaseName,
+//            @ToolParam(description = "Name of the chart to install") String chartName,
+//            @ToolParam(description = "The Kubernetes namespace to install into") String namespace,
+//            @ToolParam(description = "Optional version of the chart") String version,
+//            @ToolParam(description = "Optional key-value pairs for chart values") Map<String, String> values) throws IOException {
+//        return installChart(releaseName, chartName, namespace, version, values, null);
+//    }
 
     @Tool(name = "install_chart", description = "Install a Helm chart with optional values")
     public String installChart(
@@ -61,12 +61,12 @@ public class HelmTools {
         return executeHelmCommand(command.toArray(new String[0]));
     }
 
-    @Tool(name = "uninstall_release", description = "Uninstall a Helm release")
-    public String uninstallRelease(
-            @ToolParam(description = "Name of the release to uninstall") String releaseName,
-            @ToolParam(description = "The Kubernetes namespace of the release") String namespace) throws IOException {
-        return uninstallRelease(releaseName, namespace, null);
-    }
+//    @Tool(name = "uninstall_release", description = "Uninstall a Helm release")
+//    public String uninstallRelease(
+//            @ToolParam(description = "Name of the release to uninstall") String releaseName,
+//            @ToolParam(description = "The Kubernetes namespace of the release") String namespace) throws IOException {
+//        return uninstallRelease(releaseName, namespace, null);
+//    }
 
     @Tool(name = "uninstall_release", description = "Uninstall a Helm release")
     public String uninstallRelease(
@@ -77,15 +77,15 @@ public class HelmTools {
                 namespace != null ? namespace : defaultNamespace);
     }
 
-    @Tool(name = "upgrade_release", description = "Upgrade an existing Helm release")
-    public String upgradeRelease(
-            @ToolParam(description = "Name of the release to upgrade") String releaseName,
-            @ToolParam(description = "Name of the chart to upgrade to") String chartName,
-            @ToolParam(description = "The Kubernetes namespace of the release") String namespace,
-            @ToolParam(description = "Optional version to upgrade to") String version,
-            @ToolParam(description = "Optional key-value pairs for chart values") Map<String, String> values) throws IOException {
-        return upgradeRelease(releaseName, chartName, namespace, version, values, null);
-    }
+//    @Tool(name = "upgrade_release", description = "Upgrade an existing Helm release")
+//    public String upgradeRelease(
+//            @ToolParam(description = "Name of the release to upgrade") String releaseName,
+//            @ToolParam(description = "Name of the chart to upgrade to") String chartName,
+//            @ToolParam(description = "The Kubernetes namespace of the release") String namespace,
+//            @ToolParam(description = "Optional version to upgrade to") String version,
+//            @ToolParam(description = "Optional key-value pairs for chart values") Map<String, String> values) throws IOException {
+//        return upgradeRelease(releaseName, chartName, namespace, version, values, null);
+//    }
 
     @Tool(name = "upgrade_release", description = "Upgrade an existing Helm release")
     public String upgradeRelease(
@@ -117,12 +117,12 @@ public class HelmTools {
         return executeHelmCommand(command.toArray(new String[0]));
     }
 
-    @Tool(name = "get_release_status", description = "Get the status of a Helm release")
-    public String getReleaseStatus(
-            @ToolParam(description = "Name of the release to check") String releaseName,
-            @ToolParam(description = "The Kubernetes namespace of the release") String namespace) throws IOException {
-        return getReleaseStatus(releaseName, namespace, null);
-    }
+//    @Tool(name = "get_release_status", description = "Get the status of a Helm release")
+//    public String getReleaseStatus(
+//            @ToolParam(description = "Name of the release to check") String releaseName,
+//            @ToolParam(description = "The Kubernetes namespace of the release") String namespace) throws IOException {
+//        return getReleaseStatus(releaseName, namespace, null);
+//    }
 
     @Tool(name = "get_release_status", description = "Get the status of a Helm release")
     public String getReleaseStatus(
@@ -145,12 +145,12 @@ public class HelmTools {
         return executeHelmCommand("repo", "update");
     }
 
-    @Tool(name = "show_values", description = "Show the values for a release")
-    public String showValues(
-            @ToolParam(description = "Name of the release") String releaseName,
-            @ToolParam(description = "The Kubernetes namespace of the release") String namespace) throws IOException {
-        return showValues(releaseName, namespace, null);
-    }
+//    @Tool(name = "show_values", description = "Show the values for a release")
+//    public String showValues(
+//            @ToolParam(description = "Name of the release") String releaseName,
+//            @ToolParam(description = "The Kubernetes namespace of the release") String namespace) throws IOException {
+//        return showValues(releaseName, namespace, null);
+//    }
 
     @Tool(name = "show_values", description = "Show the values for a release")
     public String showValues(
